@@ -1,0 +1,102 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+@import 'config';
+@import 'fonts';
+
+body {
+  font-family: $font-stack;
+  background-color: $primary-background;
+  max-width: 1440px;
+  height: auto;
+  margin: 159px 152px;
+}
+
+#home-page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title-and-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  max-width: 467px;
+
+  &_title {
+    @include Header1($secondary-white);
+  }
+
+  &_description {
+    @include Body1($secondary-white);
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 109px;
+  gap: 31px;
+  &_row {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.card {
+  background-color: $secondary-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 24px;
+  width: 268px;
+  height: auto;
+
+  &_icon-background {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_icon {
+    width: 32px;
+    height: 32px;
+  }
+  &_title {
+    @include Header3($secondary-white);
+    line-height: 24px;
+  }
+  &_description {
+    @include Body1($secondary-white);
+    opacity: 0.5;
+    margin: 16px 16px 24px 16px;
+  }
+}
+
+#MachineLearning {
+  background-color: #373155;
+}
+#ComputerVison {
+  background-color: #2c3455;
+}
+
+#NaturalLanguage {
+  background-color: #274255;
+}
+#Robotics {
+  background-color: #3d413f;
+}
+@import 'mobile';

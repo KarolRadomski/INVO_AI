@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
+
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+  <body>
+    <div id="home-page">
+      <div class="title-and-description">
+        <h1 class="title-and-description_title">AI plays a significant role in our daily lives</h1>
+        <p class="title-and-description_description">The goal of AI is to create systems that can operate autonomously, making decisions and taking actions based on their own understanding of the world, without the need for direct human input.</p>
+      </div>
+      <div class="cards-container">
+        <div class="cards-container_row">
+          <div class="card">
+            <div class="card_icon-background" id="MachineLearning">
+              <img class="card_icon" src="./public/images/MachineLearningIcon.png" alt="Machine Learning icon" />
+            </div>
+            <h3 class="card_title">Machine Learning</h3>
+            <p class="card_description">The ability of AI systems to learn from data and improve their performance</p>
+          </div>
+          <div class="card">
+            <div class="card_icon-background" id="ComputerVison">
+              <img class="card_icon" src="./public/images/ComputerVisonIcon.png" alt="Computer Vision icon" />
+            </div>
+            <h3 class="card_title">Computer Vision</h3>
+            <p class="card_description">The ability to process and analyze visual information, such as images and videos</p>
+          </div>
+        </div>
+        <div class="cards-container_row">
+          <div class="card">
+            <div class="card_icon-background" id="NaturalLanguage">
+              <img class="card_icon" src="./public/images/NaturalLanguageIcon.png" alt="Natural Language icon" />
+            </div>
+            <h3 class="card_title">Natural Language</h3>
+            <p class="card_description">The ability of AI systems to understand, interpret, and generate human language</p>
+          </div>
+          <div class="card">
+            <div class="card_icon-background" id="Robotics">
+              <img class="card_icon" src="./public/images/RoboticsIcon.png" alt="Robotics icon" />
+            </div>
+            <h3 class="card_title">Robotics</h3>
+            <p class="card_description">development of autonomous robots that can perform tasks without human intervention</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+  </body>
+</html>
